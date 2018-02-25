@@ -42,6 +42,6 @@ def get_google_new_results( term, count ):
 
     return results
 
-items = get_google_new_results('fraud', 5 )
+items = get_google_new_results('olive+oil+fraud', 50 )
 for i,e in enumerate(items):
     print '%d: %s' % (i+1,e,)
