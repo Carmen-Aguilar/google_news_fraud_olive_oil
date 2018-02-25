@@ -37,11 +37,11 @@ def get_google_new_results( term, count ):
         headline =  element.childNodes[0].data
         for link in links:
             url = link.childNodes[0].data.split('=')[-1]
-        newssearch = headline + ' -> ' + url
+        newssearch = headline + ' - ' + url
         results.append( newssearch )
 
     return results
 
-items = get_google_new_results('olive+oil+fraud', 50 )
+items = get_google_new_results('fraud', 5 )
 for i,e in enumerate(items):
     print '%d: %s' % (i+1,e,)
