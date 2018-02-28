@@ -44,5 +44,4 @@ def get_google_new_results( term, count ):
 
 items = get_google_new_results('oil+fraud', 50 )
 for i,e in enumerate(items):
-    record = '%d: %s' % (i+1,e,)
-    scraperwiki.sqlite.save(['%d: %s'], record)
+    print '%d: %s' % (i+1,e,)
